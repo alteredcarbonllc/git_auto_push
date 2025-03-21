@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Git Auto Push every hour
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=1h
+Unit=git_auto_push.service
+
+[Install]
+WantedBy=timers.target
